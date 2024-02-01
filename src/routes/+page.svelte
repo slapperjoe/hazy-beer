@@ -1,4 +1,9 @@
 <script>
+	import { fade } from 'svelte/transition';
+	import milk from '$lib/images/milk-plant.webp';
+
+	let milky = false;
+	setTimeout(()=>{milky = true;}, 3000)
 </script>
 
 <svelte:head>
@@ -7,9 +12,16 @@
 </svelte:head>
 
 <section>
+	<img src={milk} alt="Metal Plant"/>
 	<h1>
-		Hazy beer..   Just go get a milkshake instead.
+		Hazy beer.
 	</h1>
+	{#if milky}
+		<h2 transition:fade={{duration: 2000}}>
+			Just go get a milkshake instead.
+		</h2>   
+	{/if}
+
 
 </section>
 
@@ -24,6 +36,10 @@
 
 	h1 {
 		width: 100%;
+	}
+
+	h2 {
+		margin-top: -14px;
 	}
 
 </style>

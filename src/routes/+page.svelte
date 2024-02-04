@@ -132,7 +132,7 @@
 	{/if}
 
 	{#if complete}
-		<h1 in:fade={{delay: 1500}}>Go buy a milkshake instead!</h1>
+		<h1 in:fade={{delay: 1500}}>Go buy a milkshake instead.</h1>
 	{/if}
 </section>
 
@@ -149,6 +149,10 @@
 		min-width: 100%;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		font-size: 115%;
+	}
+
+	img {
+		width: 90%;
 	}
 
 	h1 {

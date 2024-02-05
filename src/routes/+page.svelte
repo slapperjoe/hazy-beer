@@ -88,7 +88,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Hazy Headquarters</title>
 	<meta name="description" content="Hazy Beer" />
 </svelte:head>
 

@@ -13,6 +13,7 @@
 		{ visible: false },
 		{ visible: false },
 		{ visible: false },
+		{ visible: false },
 		{ visible: false }
 	];
 
@@ -158,12 +159,17 @@
 	{/if}
 
 	{#if blocks[6].visible}
-		<div in:typewriter={{ delay: 2000 }} out:slide={{delay: 2000, duration: 500}} on:outroend={() => image = milk} class="snobby">
+		<div in:typewriter={{ delay: 2000 }} out:slide={{delay: 1000, duration: 500}} on:outroend={() => image = milk} class="snobby">
 			<h1>The Morning After</h1>
 			As dawn breaks, you awaken with a hazy head and a heart full of regrets. "Did I really quote Nietzsche
 			to that barstool?" you wonder. But fear not, my friend. Hazy beer forgives all. It's the gentle
 			whisper that says, "Life is blurry; embrace it."
-			<br/><br/>
+		</div>
+	{/if}
+		
+	{#if blocks[7].visible}
+		<div in:typewriter={{ delay: 2000 }} out:slide={{delay: 2000, duration: 500}} on:outroend={() => image = milk} class="snobby">
+
 			So there you have it, the virtues of hazy beer.
 			Next time you sip this foggy nectar, raise your glass and say, "To haziness!" And remember, it's
 			not just beer; it's a state of mind. 🌫️🍺
